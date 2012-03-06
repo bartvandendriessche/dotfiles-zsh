@@ -39,5 +39,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export LANG=en_US.UTF-8
 export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon if
                            # not already running
+alias emacsclient="emacsclient -t"
+alias emacs=emacsclient
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
