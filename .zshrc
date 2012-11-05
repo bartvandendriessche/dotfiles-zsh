@@ -42,4 +42,9 @@ export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon if
 alias emacsclient="emacsclient -t"
 alias emacs=emacsclient
 
+# source nvm, the node version manager
+if [[ -a ~/.nvm/nvm.sh ]] then
+    source ~/.nvm/nvm.sh
+fi
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
