@@ -34,7 +34,7 @@ export LANG=en_US.UTF-8
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew ruby rails3 bundler gem)
+plugins=(git osx brew ruby rails3 bundler gem virtualenv virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
