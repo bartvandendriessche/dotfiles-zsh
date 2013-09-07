@@ -39,8 +39,8 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export LANG=en_US.UTF-8
 export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon if
                            # not already running
-alias emacsclient="emacsclient -t"
-alias emacs=emacsclient
+
+alias emacs="emacsclient -t"
 
 # source nvm, the node version manager
 if [[ -a ~/.nvm/nvm.sh ]] then
