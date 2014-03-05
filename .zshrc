@@ -30,11 +30,12 @@ ZSH_THEME="blinks"
 # Export some stuff we want available during plugin loading:
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export LANG=en_US.UTF-8
+export TERM=xterm-color
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx brew ruby rails bundler gem python virtualenv virtualenvwrapper django)
+plugins=(rails bundler gem virtualenv virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
