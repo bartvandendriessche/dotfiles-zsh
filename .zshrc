@@ -35,13 +35,13 @@ export TERM=xterm-color
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(rails bundler gem virtualenv virtualenvwrapper)
+plugins=(brew pod bundler gem)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon if
-                           # not already running
+export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon
+                           # if not already running
 
 alias emacs="emacsclient -t"
 
@@ -50,4 +50,6 @@ if [[ -a ~/.nvm/nvm.sh ]] then
     source ~/.nvm/nvm.sh
 fi
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [[ -a ~/.rvm/bin ]] then
+   PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+fi
