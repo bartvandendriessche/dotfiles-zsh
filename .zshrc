@@ -53,3 +53,7 @@ fi
 if [[ -a ~/.rvm/bin ]] then
    PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 fi
+
+if [[ -a ~/.rbenv ]] then
+   eval "$(rbenv init -)"
+fi
