@@ -54,3 +54,8 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
+# workflow aliases
+alias regen='xcodegen generate; bundle exec pod install'
+alias mock='swiftymocky generate'
+alias format='Pods/SwiftFormat/CommandLineTool/swiftformat --config .swiftformat .'
