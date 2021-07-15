@@ -50,10 +50,7 @@ if [[ -a ~/.nvm/nvm.sh ]] then
     source ~/.nvm/nvm.sh
 fi
 
-if [[ -a ~/.rvm/bin ]] then
-   PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-fi
+export PATH="/opt/homebrew/bin:$PATH"
 
-if [[ -a ~/.rbenv ]] then
-   eval "$(rbenv init -)"
-fi
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
