@@ -36,7 +36,7 @@ export LANG=en_US.UTF-8
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 export FZF_BASE=/opt/homebrew/Cellar/fzf/0.27.2
-plugins=(brew pod bundler gem fzf)
+plugins=(brew pod bundler gem fzf asdf)
 
 source $ZSH/oh-my-zsh.sh
 
