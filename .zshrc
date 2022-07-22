@@ -51,7 +51,7 @@ if [[ -a ~/.nvm/nvm.sh ]] then
     source ~/.nvm/nvm.sh
 fi
 
-export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # workflow aliases
 alias regen='xcodegen generate; bundle exec pod install'
