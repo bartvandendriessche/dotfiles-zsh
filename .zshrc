@@ -35,7 +35,7 @@ export LANG=en_US.UTF-8
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-export FZF_BASE=/opt/homebrew/Cellar/fzf/0.31.0
+export FZF_BASE=/opt/homebrew/Cellar/fzf/0.35.1
 plugins=(brew pod bundler gem fzf asdf)
 
 source $ZSH/oh-my-zsh.sh
@@ -52,6 +52,11 @@ if [[ -a ~/.nvm/nvm.sh ]] then
 fi
 
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+
+# Make libffi available to ruby gems
+export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
 
 # workflow aliases
 alias regen='xcodegen generate; bundle exec pod install'
