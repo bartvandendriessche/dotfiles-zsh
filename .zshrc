@@ -7,6 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="blinks"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
