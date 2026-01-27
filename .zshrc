@@ -53,8 +53,3 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
-
-# workflow aliases
-alias regen='xcodegen generate; bundle exec pod install'
-alias mock='swiftymocky generate'
-alias format='Pods/SwiftFormat/CommandLineTool/swiftformat --config .swiftformat .'
