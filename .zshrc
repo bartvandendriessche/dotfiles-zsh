@@ -53,3 +53,6 @@ export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/libffi/lib/pkgconfig"
+
+# Claude Code stores binaries in `~/.local/bin`
+export PATH="$HOME/.local/bin:$PATH"
