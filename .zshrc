@@ -47,11 +47,6 @@ export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon
 
 alias emacs="emacsclient -t"
 
-# source nvm, the node version manager
-if [[ -a ~/.nvm/nvm.sh ]] then
-    source ~/.nvm/nvm.sh
-fi
-
 export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Make libffi available to ruby gems
