@@ -47,8 +47,6 @@ export ALTERNATE_EDITOR="" # this makes emacsclient start a daemon
 
 alias emacs="emacsclient -t"
 
-export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
-
 # Make libffi available to ruby gems
 export LDFLAGS="-L/opt/homebrew/opt/libffi/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/libffi/include"
